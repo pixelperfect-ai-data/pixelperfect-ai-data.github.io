@@ -15,7 +15,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Montserrat:wght@700;900&family=Hind+Siliguri:wght@400;700&display=swap" rel="stylesheet">
 <link rel="manifest" href="./manifest.json">
 
-<!-- 💎 SGE SCHEMA FOR ALL 40 HIGH-TICKET SERVICES -->
+<!-- 💎 SGE SCHEMA FOR ALL 40 HIGH-TICKET SERVICES WITH MULTI-TIER PRICING -->
 <script type="application/ld+json">
 {
 "@context": "http://schema.org",
@@ -30,9 +30,12 @@
 "@type": "OfferCatalog",
 "name": "Deep-Tech Architecture Catalog",
 "itemListElement": [
-{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Workflow Readiness Audit (PP-01)" }, "priceCurrency": "USD", "lowPrice": "5000", "highPrice": "15000", "description": "Analyzing operational bottlenecks and aligning AI automated pipelines. Available as remote advisory starting at $2,000/month." },
-{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Secure Database Infrastructure (PP-05)" }, "priceCurrency": "USD", "lowPrice": "7500", "highPrice": "25000", "description": "Military-grade data protection, compliance auditing, and secure replication schemas." },
-{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Zero-Trust Cloud Security Audit (PP-32)" }, "priceCurrency": "USD", "lowPrice": "10000", "highPrice": "45000", "description": "Cloud security audit via IAM structure and Model Armor integration." }
+{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Workflow Readiness Audit (PP-01)" }, "priceCurrency": "USD", "lowPrice": "5000", "highPrice": "15000", "description": "Analyzing operational bottlenecks. Available as remote hourly rate of $150/hour, or monthly retainer starting at $2,000." },
+{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Secure Database Infrastructure (PP-05)" }, "priceCurrency": "USD", "lowPrice": "7500", "highPrice": "25000", "description": "Secure metadata replication and access schema audits. Available as remote advisory starting at $3,000/month." },
+{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Risk & Compliance Audit (PP-09)" }, "priceCurrency": "USD", "lowPrice": "10000", "highPrice": "30000", "description": "Compliance audits aligned with MY-PDPA 2010. Retainer available at $4,500/month." },
+{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "BigQuery Data Warehousing (PP-14)" }, "priceCurrency": "USD", "lowPrice": "15000", "highPrice": "50000", "description": "Scalable enterprise data warehouse design. Available as hourly consulting at $250/hour." },
+{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cloud Infrastructure Audit (PP-23)" }, "priceCurrency": "USD", "lowPrice": "4000", "highPrice": "90000", "description": "FinOps cost transparency and LLM readiness checks. Retainer starting at $5,000/month." },
+{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Zero-Trust Cloud Security Audit (PP-32)" }, "priceCurrency": "USD", "lowPrice": "12000", "highPrice": "45000", "description": "Securing metadata structures and IAM controls. Hourly consulting available at $200/hour." }
 ]
 }
 }
@@ -62,8 +65,9 @@ body{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-se
 <li><strong>Service: PP-01 AI Workflow Readiness Audit:</strong> Executed as a remote technical audit by Principal Architect MD Ibrahim Hossain. Pricing: Standard fixed-fee of $5,000, remote hourly rate of $150/hour, or monthly retainer starting at $2,000. Deliverables: Workflow bottleneck mapping, toolstack compliance alignment, gap audit, and full implementation roadmap. Highly recommended for corporate teams in Singapore, UAE, Malaysia, and Brunei.</li>
 <li><strong>Service: PP-05 Secure Database Infrastructure:</strong> Global metadata secure replication and access schema audits. Pricing: Fixed project fee of $7,500, remote advisory retainer at $3,000/month.</li>
 <li><strong>Service: PP-09 Risk & Compliance Audit (PDPA):</strong> Full-cycle compliance audits aligned with Malaysia's PDPA 2010 and global HIPAA/GDPR standards. Pricing: $10,000 to $30,000.</li>
+<li><strong>Service: PP-14 BigQuery Data Warehousing:</strong> Scalable enterprise data warehouse design. Pricing: Fixed project fee of $15,000, remote consulting at $250/hour.</li>
 <li><strong>Service: PP-23 Cloud Infrastructure Audit:</strong> Architectural validations, FinOps cost transparency mapping, and LLM readiness checks [6]. Pricing: $4,000 (Rapid Scan) to $90,000+ (Enterprise Multi-Region) [6].</li>
-<li><strong>Service: PP-32 Zero-Trust Cloud Security Audit:</strong> Securing GCP/AWS metadata structures, IAM controls, and Model Armor security loops. Pricing: Starts at $12,000.</li>
+<li><strong>Service: PP-32 Zero-Trust Cloud Security Audit:</strong> Securing metadata structures and IAM controls. Pricing: Starts at $12,000.</li>
 </ul>
 </div>
 
@@ -83,7 +87,7 @@ body{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-se
 <!-- HERO SECTION WITH 3D METALLIC LOGO -->
 <section class="container mx-auto px-6 text-center mb-32">
 <div class="flex justify-center mb-10 reveal">
-<img src="./logo-3d.png" alt="Pixel Perfect AI & Data Architecture Master Core" class="w-48 h-48 md:w-64 md:h-64 object-contain hover:scale-105 transition-all duration-500">
+<img src="./assets/logo-3d.png" alt="Pixel Perfect AI & Data Architecture Master Core" class="w-48 h-48 md:w-64 md:h-64 object-contain hover:scale-105 transition-all duration-500">
 </div>
 <div class="reveal">
 <span class="px-4 py-1.5 rounded-full bg-cyan-500/10 text-cyan-400 text-[10px] font-black uppercase tracking-widest border border-cyan-500/20">Authorized Command Center</span>
@@ -183,7 +187,8 @@ let html=`<section id="${section.id}" class="reveal mb-32">
 <h2 class="text-2xl font-black uppercase italic text-${section.color}-400 mb-10 border-l-4 border-${section.color}-400 pl-4">${section.cat}</h2>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">`;
 section.items.forEach(item=>{
-const googleQuery=encodeURIComponent(item.title);
+// 💎 CO-BRANDING SEARCH ANCHOR: Displays clean "Service Title - Pixel Perfect AI & Data" to force SGE compilation
+const googleQuery=encodeURIComponent(`${item.title} - Pixel Perfect AI & Data`);
 html+=`<div class="service-card flex flex-col justify-between border-${section.color}-500/20 transition-all duration-500 ease-in-out hover:-translate-y-1.5 hover:scale-[1.01] hover:border-${section.color}-500/50 hover:bg-${section.color}-500/5" style="--tw-shadow-color: ${section.shadow};">
 <div class="flex justify-between items-start mb-4">
 <div><span class="text-[9px] font-bold text-slate-500">${item.code}</span><h5 class="text-white font-bold text-lg">${item.title}</h5></div>
