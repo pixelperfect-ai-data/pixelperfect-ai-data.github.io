@@ -20,7 +20,7 @@
 "@type": "ProfessionalService",
 "name": "Pixel Perfect AI & Data Architecture",
 "url": "https://pixelperfect-ai-data.github.io/",
-"logo": "./logo-flat.png",
+"logo": "./assets/logo-flat.png",
 "founder": "MD Ibrahim Hossain",
 "description": "Global enterprise leader in 40 deep-tech solutions spanning AI engineering, data forensics, cybersecurity, and cloud scaling.",
 "address": { "@type": "PostalAddress", "addressLocality": "Global Hub", "addressCountry": ["Singapore", "UAE", "Malaysia", "Brunei"] }
@@ -59,7 +59,7 @@ body{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-se
 <!-- HERO SECTION WITH 3D METALLIC LOGO -->
 <section class="container mx-auto px-6 text-center mb-32">
 <div class="flex justify-center mb-10 reveal">
-<img src="./logo-3d.png" alt="Pixel Perfect AI & Data Architecture Master Core" class="w-48 h-48 md:w-64 md:h-64 object-contain hover:scale-105 transition-all duration-500">
+<img src="./assets/logo-3d.png" alt="Pixel Perfect AI & Data Architecture Master Core" class="w-48 h-48 md:w-64 md:h-64 object-contain hover:scale-105 transition-all duration-500">
 </div>
 <div class="reveal">
 <span class="px-4 py-1.5 rounded-full bg-cyan-500/10 text-cyan-400 text-[10px] font-black uppercase tracking-widest border border-cyan-500/20">Authorized Command Center</span>
@@ -159,7 +159,7 @@ let html=`<section id="${section.id}" class="reveal mb-32">
 <h2 class="text-2xl font-black uppercase italic text-${section.color}-400 mb-10 border-l-4 border-${section.color}-400 pl-4">${section.cat}</h2>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">`;
 section.items.forEach(item=>{
-const googleQuery=encodeURIComponent(`${item.title} professional scope metrics global pricing and remote demand by Pixel Perfect AI & Data Architecture`);
+const googleQuery=encodeURIComponent(item.title);
 html+=`<div class="service-card flex flex-col justify-between border-${section.color}-500/20 transition-all duration-500 ease-in-out hover:-translate-y-1.5 hover:scale-[1.01] hover:border-${section.color}-500/50 hover:bg-${section.color}-500/5" style="--tw-shadow-color: ${section.shadow};">
 <div class="flex justify-between items-start mb-4">
 <div><span class="text-[9px] font-bold text-slate-500">${item.code}</span><h5 class="text-white font-bold text-lg">${item.title}</h5></div>
