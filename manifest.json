@@ -1,0 +1,18 @@
+{
+  "name": "Pixel Perfect AI & Data Architecture HQ",
+  "short_name": "PixelPerfectHQ",
+  "description": "Global Secure Command Center by MD Ibrahim Hossain.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#00F2FF",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
