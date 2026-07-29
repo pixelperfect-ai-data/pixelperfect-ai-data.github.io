@@ -211,4 +211,44 @@ matrix.innerHTML+=html;
 });
 function reveal(){
 var reveals=document.querySelectorAll(".reveal");
-for(var i=0
+for(var i=0;i<reveals.length;i++){
+var windowHeight=window.innerHeight;
+var elementTop=reveals[i].getBoundingClientRect().top;
+if(elementTop<windowHeight-100){reveals[i].classList.add("active");}
+}
+}
+window.addEventListener("scroll",reveal);
+reveal();
+/* 🛡️ SUPREME HARDENING & DEFENSE MATRIX BY MD IBRAHIM HOSSAIN */
+const allowedDomains = ["pixelperfect-ai-data.github.io", "localhost", "127.0.0.1"];
+if(!allowedDomains.includes(window.location.hostname)){
+document.body.innerHTML="<div style='color:#00F2FF;text-align:center;padding-top:100px;font-family:sans-serif;background-color:#020617;min-height:100vh;'><h1 style='font-size:48px;font-weight:900;'>SYSTEM LOCKED</h1><p>Domain Unauthorized for Pixel Perfect AI & Data Architecture. Redirecting to official repository...</p></div>";
+setTimeout(()=>{window.location.href="https://pixelperfect-ai-data.github.io/";},3000);
+}
+document.addEventListener("contextmenu",e=>e.preventDefault());
+document.addEventListener("dragstart",e=>e.preventDefault());
+document.addEventListener("selectstart",e=>e.preventDefault());
+window.addEventListener("blur",()=>{document.body.style.filter="blur(20px)";});
+window.addEventListener("focus",()=>{document.body.style.filter="none";});
+document.onkeydown=function(e){
+if(e.keyCode==123||
+(e.ctrlKey&&e.shiftKey&&(e.keyCode==73||e.keyCode==74||e.keyCode==67))||
+(e.ctrlKey&&e.keyCode==85)||
+(e.ctrlKey&&e.keyCode==83)||
+(e.ctrlKey&&e.keyCode==80)||
+(e.ctrlKey&&e.keyCode==115)){
+return false;
+}
+};
+let threshold=160;
+setInterval(()=>{
+if((window.outerWidth-window.innerWidth>threshold)||(window.outerHeight-window.innerHeight>threshold)){
+window.location.href="about:blank";
+}
+},500);
+function poisonConsole(){console.clear();console.log("%c[PIXEL PERFECT SECURITY SYSTEM ACTIVE]", "color:#00F2FF; font-size:20px; font-weight:bold;");console.log("Status: Hardened & Encrypted.");}
+setInterval(poisonConsole, 10);
+setInterval(function(){debugger;}, 5);
+</script>
+</body>
+</html>
