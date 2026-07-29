@@ -9,7 +9,7 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "https://raw.githubusercontent.com/pixelperfectits/assets/main/Flat%20Minimal%20Neon%20Icon.png",
+      "src": "./logo-flat.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
