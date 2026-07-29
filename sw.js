@@ -1,9 +1,12 @@
 /* 🔒 PROPRIETARY OFFLINE ENGINE | LEAD ARCHITECT: MD IBRAHIM HOSSAIN */
-const CACHE_NAME = 'pp-vault-hq-cache-v18';
+const CACHE_NAME = 'pp-vault-hq-cache-v20';
 const ASSETS = [
   './',
   './index.html',
   './manifest.json',
+  './logo-flat.png',
+  './logo-3d.png',
+  './google-icon.png',
   'https://cdn.tailwindcss.com',
   'https://unpkg.com/lucide@latest'
 ];
