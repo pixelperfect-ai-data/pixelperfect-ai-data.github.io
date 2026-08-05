@@ -1,12 +1,14 @@
 /* 🔒 PROPRIETARY OFFLINE ENGINE | LEAD ARCHITECT: MD IBRAHIM HOSSAIN */
-const CACHE_NAME = 'pp-vault-hq-cache-v20';
+const CACHE_NAME = 'pp-vault-hq-cache-v22';
 const ASSETS = [
   './',
   './index.html',
   './manifest.json',
-  './logo-flat.png',
-  './logo-3d.png',
-  './google-icon.png',
+  'https://raw.githubusercontent.com/pixelperfect-ai-data/pixelperfect-assets/main/logo-flat.png',
+  'https://raw.githubusercontent.com/pixelperfect-ai-data/pixelperfect-assets/main/banner.png',
+  'https://raw.githubusercontent.com/pixelperfect-ai-data/pixelperfect-assets/main/google-icon.png',
+  'https://raw.githubusercontent.com/pixelperfect-ai-data/pixelperfect-assets/main/about-banner.png',
+  'https://raw.githubusercontent.com/pixelperfect-ai-data/pixelperfect-assets/main/blog-banner.png',
   'https://cdn.tailwindcss.com',
   'https://unpkg.com/lucide@latest'
 ];
